@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vantage Management - chat test</title>
+<meta name="robots" content="noindex, nofollow">
+<script
+  id="retell-widget"
+  src="https://dashboard.retellai.com/retell-widget-v2.js"
+  type="module"
+  data-public-key="public_key_a9d95b949757c8c8eceef"
+  data-agent-id="agent_8cdeea79726f3ff73cbce90f47"
+  data-title="Vantage Management"
+></script>
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  /* Deliberately NOT a flex/grid container. The widget injects its own elements
+     as children of <body>; a flex body turns them into flex items and collapses
+     the chat panel. Keep body a plain block so the widget controls its layout. */
+  body {
+    margin: 0; min-height: 100vh; padding: 40px 24px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #f6f5f2; color: #23201c;
+  }
+  .card {
+    max-width: 620px; width: 100%; margin: 0 auto;
+    background: #fff; border: 1px solid #e3ded6;
+    border-radius: 14px; padding: 32px 36px; box-shadow: 0 1px 3px rgba(0,0,0,.05);
+  }
+  h1 { margin: 0 0 4px; font-size: 22px; letter-spacing: -.01em; }
+  .sub { margin: 0 0 24px; color: #7a736a; font-size: 14px; }
+  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .08em;
+       color: #7a736a; margin: 26px 0 10px; }
+  ol { margin: 0; padding-left: 20px; }
+  li { margin: 7px 0; line-height: 1.5; }
+  code { background: #f2efe9; border: 1px solid #e3ded6; border-radius: 5px;
+         padding: 2px 6px; font-size: 13px; }
+  .warn { margin-top: 26px; padding: 14px 16px; background: #fdf6e6;
+          border: 1px solid #f0e0b8; border-radius: 10px; font-size: 14px; line-height: 1.55; }
+  .arrow { margin-top: 22px; color: #7a736a; font-size: 14px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1>Vantage Management</h1>
+    <p class="sub">Chat widget test page. This is a real chat, not the dashboard rehearsal window.</p>
+
+    <h2>Type these, one at a time</h2>
+    <ol>
+      <li>Hi, I'm looking into your services</li>
+      <li>I've got a rental property I'd like managed, and I want someone to come see it</li>
+      <li>Book an appointment please</li>
+      <li>Thursday at 2 in the afternoon</li>
+      <li>yes</li>
+      <li>Sara Bennett</li>
+      <li>3105557788</li>
+      <li><code>sara7@klick.so</code></li>
+      <li>1420 Maple Drive, Santa Monica</li>
+      <li>About 2,400 square feet</li>
+      <li>A friend recommended you</li>
+    </ol>
+
+    <h2>Watch for</h2>
+    <ol>
+      <li>No dash characters anywhere</li>
+      <li>No "one moment" or "let me check the calendar"</li>
+      <li>It never reads your details back to you</li>
+      <li>One goodbye at the end, not two</li>
+    </ol>
+
+    <div class="warn">
+      <strong>End the chat properly when you are done.</strong>
+      Close it with the widget's own close or end control rather than just shutting the tab.
+      Chats that simply time out do not trigger the analysis webhook, so nothing would reach n8n.
+    </div>
+
+    <p class="arrow">The chat bubble is in the bottom corner.</p>
+  </div>
+</body>
+</html>
