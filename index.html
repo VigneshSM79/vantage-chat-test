@@ -11,8 +11,14 @@
   type="module"
   data-public-key="public_key_a9d95b949757c8c8eceef"
   data-agent-id="agent_8cdeea79726f3ff73cbce90f47"
+  data-agent-version="3"
   data-title="Vantage Management"
 ></script>
+<!-- data-agent-version pins the DRAFT (v3, Conductor's latest). Without it the
+     widget serves the published version, which is older. Bump this number each
+     time Conductor creates a new draft, or delete it to follow the published
+     version once we go live. -->
+
 <style>
   :root { color-scheme: light; }
   * { box-sizing: border-box; }
