@@ -11,14 +11,16 @@
   type="module"
   data-public-key="public_key_a9d95b949757c8c8eceef"
   data-agent-id="agent_8cdeea79726f3ff73cbce90f47"
+  data-agent-version="7"
   data-title="Vantage Management"
 ></script>
-<!-- NO data-agent-version on purpose. Without a pin the widget always serves the
-     newest PUBLISHED version of the agent - exactly what vantage-mgmt.com serves.
-     Decision 2026-08-25: publish first, then test, so this page and the live site
-     are never out of step and there is no pin to remember to bump.
-     If we ever need to test an UNPUBLISHED draft again, add the line back as
-     data-agent-version="N" - the pin does serve drafts. -->
+<!-- PINNED to draft v7 (2026-08-26). Published is v6, which real customers on
+     vantage-mgmt.com are using right now. v7 is Conductor's take-a-message fix and
+     is UNPROVEN, so it is tested here first and published only if it passes.
+     This reverses the 2026-08-25 no-pin decision, which was made when nobody could
+     reach the live site. They can now.
+     After v7 is published: either bump this to the next draft number, or delete the
+     line to follow the published version again. -->
 
 <style>
   :root { color-scheme: light; }
