@@ -5,6 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Vantage Management - chat test</title>
 <meta name="robots" content="noindex, nofollow">
+<script>
+  // Do not keep chat history on this device. The Retell widget saves every
+  // conversation to browser storage and shows it in an "Open chat history" panel;
+  // on a shared computer the next person could read the previous person's details.
+  // There is no widget setting for this, so we clear the keys before it loads.
+  try {
+    localStorage.removeItem('LS_CHAT_LIST');
+    localStorage.removeItem('LS_CHAT_HISTORY');
+    localStorage.removeItem('LS_CHAT_ID');
+  } catch (e) {}
+</script>
 <script
   id="retell-widget"
   src="https://dashboard.retellai.com/retell-widget-v2.js"
@@ -13,6 +24,9 @@
   data-agent-id="agent_8cdeea79726f3ff73cbce90f47"
   data-agent-version="8"
   data-title="Vantage Management"
+  data-color="#2d5339"
+  data-bot-name="Ava"
+  data-logo-url="https://n8n-ziuh.srv1450250.hstgr.cloud/webhook/vantage-crest.png"
 ></script>
 <!-- PINNED to draft v8 (2026-08-26, Job A). Published is v7, which real customers on
      vantage-mgmt.com are using now. v8 is unproven, so it is tested here first and
